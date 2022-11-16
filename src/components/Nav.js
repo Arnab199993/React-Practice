@@ -4,18 +4,20 @@ import { Link } from 'react-router-dom';
 const { Header, Content, Sider } = Layout;
 const Nav = () => {
     const items=[
-        {key:1,
+      {key:1,
+        label: <Link to={"/"}>Home</Link>
+    },
+        {key:2,
             label: <Link to={"/listing"}>Listing</Link>
         },
-        {key:2,
-            label: <Link to={"/signup"}>Signup</Link>
-        }
-    
+        {key:3,
+          label: <Link to={"/signup"}>Signup</Link>
+      },
         ]
    
   return (
     <div >
-        <h1>Navbar</h1>
+        {/* <h1>Navbar</h1> */}
         <Header>
       <div className="logo" />
       <Menu
