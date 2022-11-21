@@ -30,6 +30,10 @@ const Nav = () => {
   {
     key:8,
     label:<Link to={"./validation1"}>Validation1</Link>
+  },
+  {
+    key:9,
+    label:<Link to={"./home"}>List</Link>
   }
         ]
    

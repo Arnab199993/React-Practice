@@ -9,6 +9,8 @@ import Validation from "./pages/Validation"
 import Lifecycle from "./components/Lifecycle/Lifecycle"
 import Lifecycleclass from "./components/Lifecycle/Lifecycleclass"
 import Validation1 from "./pages/Validation1"
+import List from "./components/List"
+import Home from "./pages/Home"
 const Routes=[
     {
         path:"/",
@@ -49,6 +51,14 @@ const Routes=[
             {
                 path:"validation1",
                 element:<Validation1/>
+            },
+            {
+                path:"list",
+                element:<List/>
+            },
+            {
+                path:"home",
+                element:<Home/>
             },
 
         ]
