@@ -13,6 +13,24 @@ const Nav = () => {
         {key:3,
           label: <Link to={"/signup"}>Signup</Link>
       },
+      {key:4,
+        label: <Link to={"/login"}>Login</Link>
+    },
+    {key:5,
+      label: <Link to={"/validation"}>Validation</Link>
+  },
+  {
+    key:6,
+    label:<Link to={"./lifecycle"}>Lifecycle</Link>
+  },
+  {
+    key:7,
+    label:<Link to={"./lifecycleclass"}>Lifecycleclass</Link>
+  },
+  {
+    key:8,
+    label:<Link to={"./validation1"}>Validation1</Link>
+  }
         ]
    
   return (
