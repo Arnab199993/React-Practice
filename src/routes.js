@@ -11,6 +11,7 @@ import Lifecycleclass from "./components/Lifecycle/Lifecycleclass"
 import Validation1 from "./pages/Validation1"
 import List from "./components/List"
 import Home from "./pages/Home"
+import Addform from "./components/Addform"
 const Routes=[
     {
         path:"/",
@@ -59,6 +60,10 @@ const Routes=[
             {
                 path:"home",
                 element:<Home/>
+            },
+            {
+                path:"addform",
+                element:<Addform/>
             },
 
         ]

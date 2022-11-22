@@ -6,10 +6,11 @@ import Col from 'react-bootstrap/Col';
 import List from '../components/List';
 import Config from '../Config';
 import axios from 'axios';
+import Addform from '../components/Addform';
 
 const Home = () => {
     const [isdeleted,setisdeleted]=useState(false)
-    const URL="http://54.158.178.13:8000/api/spartans"
+    const URL="rustycoder.live:8181/auth/signup"
     const deleteitem=(id)=>{
         //will make delete api call
         axios.delete(`${Config.URL}/delete/${id}`).then(response=>{
@@ -30,7 +31,10 @@ const Home = () => {
             console.log(error)
         })
     }
-
+const additem=(data)=>{
+    console.log(data)
+    //just call the api
+}
 
     useEffect(()=>{
         callapi()
@@ -45,7 +49,10 @@ const Home = () => {
         1 of 2
         <List data={state} deleteitem={deleteitem}/>
         </Col>
-        <Col>2 of 2</Col>
+        <Col>
+        <h1>2 of 2</h1>
+        <Addform additem={additem}/>
+        </Col>
       </Row>
     </Container>
     </div>
