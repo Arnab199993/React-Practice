@@ -29,7 +29,7 @@ const Addform = (props) => {
         <Controller
         name="name"
         control={control}
-        render={({ field }) => <Form.Control {...register=("age")} type="number" placeholder="enter age"/>}
+        render={({ field }) => <Form.Control {...register("age")} type="number" placeholder="enter age"/>}
       />
       <p >{errors.age?.message}</p>
 
@@ -44,7 +44,7 @@ const Addform = (props) => {
         <Controller
         name="name"
         control={control}
-        render={({ field }) => <Form.Control {...register=("name")} type="text" placeholder="enter name"/>}
+        render={({ field }) => <Form.Control {...register("name")} type="text" placeholder="enter name"/>}
       />
       <p >{errors.name?.message}</p>
 
@@ -55,7 +55,7 @@ const Addform = (props) => {
         <Controller
         name="name"
         control={control}
-        render={({ field }) => <Form.Control {...register=("address")} type="text" placeholder="enter address"/>}
+        render={({ field }) => <Form.Control {...register("address")} type="text" placeholder="enter address"/>}
       />
       <p >{errors.address?.message}</p>
       </Form.Group>
