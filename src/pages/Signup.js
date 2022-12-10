@@ -5,13 +5,13 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const SignUp = () => {
-  const navigate = useNavigate(); // for dynmaic page routing
+  const navigate = useNavigate();   // for dynmaic page routing
   const onFinish = (values) => {
     console.log(values);
     // api ca;; here --->>
 
     //
-
+//  http://rustycoder.live:8181/auth/signup
 axios.post("http://rustycoder.live:8181/auth/signup",values).then(response=>{
   console.log(response.data)
   navigate("/listing");

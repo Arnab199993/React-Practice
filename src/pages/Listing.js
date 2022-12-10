@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { Space,Table, Tag } from 'antd';
 // import Table from '../components/Table';
+
 const columns = [
     {
       title: 'Name',
@@ -18,6 +19,22 @@ const columns = [
       dataIndex: 'address',
       key: 'address',
     },
+
+
+
+    {
+      title: 'Action',
+      key: 'action',
+      render: (_, record) => (
+        <Space size="middle">
+        <Button type="primary" onClick={openLoginPage}>Login Page</Button>
+          <a>Delete</a>
+        </Space>
+      ),
+    },
+
+
+
     {
       title: 'Tags',
       key: 'tags',
@@ -73,6 +90,12 @@ const columns = [
     },
   ];
 const Listing = () => {
+
+
+ 
+
+
+
   useEffect(function(){  //UseEffect will take a function and an array
     fetch('http://rustycoder.live:8000/listing')
   .then((response) => response.json())

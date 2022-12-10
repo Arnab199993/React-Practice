@@ -1,9 +1,5 @@
-import React from 'react'
+// const Config = () => {
+//   URL:"http://localhost:8090"
+// }
 
-const Config = () => {
-  return (
-    <div>Config</div>
-  )
-}
-
-export default Config
+// export default Config

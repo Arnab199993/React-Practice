@@ -9,6 +9,10 @@ import axios from 'axios';
 import Addform from '../components/Addform';
 
 const Home = () => {
+  
+
+
+
     const [isdeleted,setisdeleted]=useState(false)
     const URL="rustycoder.live:8181/auth/signup"
     const deleteitem=(id)=>{
