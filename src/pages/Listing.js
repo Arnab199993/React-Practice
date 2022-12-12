@@ -1,8 +1,16 @@
 import React,{useEffect, useState} from 'react'
-import { Space,Table, Tag } from 'antd';
+import { Button, Space, Table,Tag } from 'antd';
 // import Table from '../components/Table';
+import { useNavigate } from "react-router-dom";
 
-const columns = [
+const Listing = () => {
+  const navigate = useNavigate();
+
+  const openLoginPage=()=>{
+    navigate("/login")
+
+  }
+  const columns = [
     {
       title: 'Name',
       dataIndex: 'name',
@@ -89,9 +97,6 @@ const columns = [
       tags: ['cool', 'teacher'],
     },
   ];
-const Listing = () => {
-
-
  
 
 
